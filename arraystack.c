@@ -78,6 +78,6 @@ void display()
     }
     if(top == -1)
     {
-        printf("OOPS!! a is empty");
+        printf("OOPS!! stack is empty");
     }
 }
