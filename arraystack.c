@@ -1,5 +1,6 @@
 #include <stdio.h>
-int stack[100],i,j,choice=0,n,top=-1;
+int a[10],top=-1;
+int n;
 void push();
 void pop();
 void display();
@@ -8,9 +9,7 @@ void main ()
 
     printf("Enter the number of elements in the stack ");
     scanf("%d",&n);
-
-
-
+    int choice = 0;
     while(choice != 4)
     {
         printf("\n----------------------------------------------\n");
@@ -57,7 +56,7 @@ void push ()
         printf("Enter the value?");
         scanf("%d",&val);
         top = top +1;
-        stack[top] = val;
+        a[top] = val;
     }
 }
 
@@ -71,14 +70,14 @@ void pop ()
 void display()
 {
     printf("************stack elements are*************** \n ");
-    for (i=top;i>=0;i--)
+    for (int i=top;i>=0;i--)
     {
 
-        printf("%d,",stack[i]);
+        printf("%d,",a[i]);
 
     }
     if(top == -1)
     {
-        printf("OOPS!! stack is empty");
+        printf("OOPS!! a is empty");
     }
 }
