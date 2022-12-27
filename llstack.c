@@ -55,7 +55,7 @@ void push ()
 {
     int val;
     struct node *i = malloc(sizeof(struct node));
-    {
+    
         printf("Enter the value:");
         scanf("%d",&val);
         if(head==NULL)
@@ -73,7 +73,7 @@ void push ()
         }
         printf("Item pushed");
 
-    }
+    
 }
 
 void pop()
@@ -90,7 +90,7 @@ void pop()
 }
 void display()
 {
-    int i;
+   
     struct node *start;
     start=head;
     if(start == NULL)
